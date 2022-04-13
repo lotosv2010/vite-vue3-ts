@@ -9,6 +9,7 @@ import HelloWorld from './components/HelloWorld.vue';
 
 <style lang="scss">
 #app {
+  height: 100%;
   margin-top: 50px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;

@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-order', 'stylelint-scss'],
-  customSyntax: 'postcss-html',
+  // customSyntax: 'postcss-html',
   rules: {
     indentation: 2,
     'no-descending-specificity': null,

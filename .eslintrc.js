@@ -37,7 +37,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'no-var': 'error',
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['warn', {}, { usePrettierrc: true }],
     // 禁止出现console
     'no-console': 'warn',
     // 禁用debugger
@@ -93,7 +93,7 @@ module.exports = {
     // 强制使用骆驼拼写法命名约定
     camelcase: 'warn',
     // 强制使用一致的缩进
-    indent: 'off',
+    indent: ['error', 2],
     // 强制在 JSX 属性中一致地使用双引号或单引号
     // 'jsx-quotes': 'warn',
     // 强制可嵌套的块的最大深度4

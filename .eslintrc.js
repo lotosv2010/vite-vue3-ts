@@ -39,9 +39,9 @@ module.exports = {
     'no-var': 'error',
     'prettier/prettier': ['warn', {}, { usePrettierrc: true }],
     // 禁止出现console
-    'no-console': 'warn',
+    'no-console': 'off',
     // 禁用debugger
-    'no-debugger': 'warn',
+    'no-debugger': 'off',
     // 禁止出现重复的 case 标签
     'no-duplicate-case': 'warn',
     // 禁止出现空语句块

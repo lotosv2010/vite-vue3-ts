@@ -10,6 +10,9 @@ const msg = ref('Hello Vue 3 + TypeScript + Vite');
 
 onMounted(() => {
   msg.value = 'Hello Vue 3 + TypeScript + Vite !!!';
+  fetch('/api/datav-res/datav/map.json')
+    .then((res) => res.json())
+    .then((data) => console.log(data));
 });
 </script>
 

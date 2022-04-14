@@ -23,6 +23,7 @@ specifiers:
   typescript: ^4.4.4
   vite: ^2.7.2
   vite-plugin-checker: ^0.4.5
+  vite-plugin-compression: ^0.5.1
   vite-plugin-html: ^3.2.0
   vue: ^3.2.25
   vue-tsc: ^0.29.8
@@ -53,6 +54,7 @@ devDependencies:
   typescript: 4.6.3
   vite: 2.9.1_sass@1.50.0
   vite-plugin-checker: 0.4.5_vite@2.9.1
+  vite-plugin-compression: 0.5.1_vite@2.9.1
   vite-plugin-html: 3.2.0_vite@2.9.1
   vue-tsc: 0.29.8_typescript@4.6.3
 
@@ -4972,6 +4974,19 @@ packages:
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.4
       vscode-uri: 3.0.3
+    dev: true
+
+  /vite-plugin-compression/0.5.1_vite@2.9.1:
+    resolution: {integrity: sha512-5QJKBDc+gNYVqL/skgFAP81Yuzo9R+EAf19d+EtsMF/i8kFUpNi3J/H01QD3Oo8zBQn+NzoCIFkpPLynoOzaJg==}
+    peerDependencies:
+      vite: '>=2.0.0'
+    dependencies:
+      chalk: 4.1.2
+      debug: 4.3.4
+      fs-extra: 10.0.1
+      vite: 2.9.1_sass@1.50.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /vite-plugin-html/3.2.0_vite@2.9.1:

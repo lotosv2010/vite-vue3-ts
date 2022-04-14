@@ -1,10 +1,21 @@
 <script setup lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue';
+import { useTitle } from '@/hooks';
+import { onMounted, ref } from 'vue';
+
+// 设置 document title
+useTitle();
+
+const msg = ref('Hello Vue 3 + TypeScript + Vite');
+
+onMounted(() => {
+  msg.value = 'Hello Vue 3 + TypeScript + Vite !!!';
+});
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <HelloWorld :msg="msg" />
 </template>
 
 <style lang="scss">

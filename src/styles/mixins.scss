@@ -1,0 +1,11 @@
+@mixin flexContainer($dir: column, $jc: center, $align: center) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $jc;
+}
+@mixin style($size, $color, $bold: normal) {
+  font-size: $size;
+  font-weight: $bold;
+  color: $color;
+}

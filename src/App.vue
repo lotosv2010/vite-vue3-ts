@@ -17,6 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <header>Vue3 + vite</header>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld :msg="msg" />
 </template>
@@ -24,9 +25,25 @@ onMounted(() => {
 <style lang="scss">
 #app {
   height: 100%;
-  margin-top: 50px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
   text-align: center;
+
+  header {
+    @include style(calc(10px + 2vmin), #ffffff);
+    @include flexContainer();
+
+    min-height: 60px;
+    background-color: $bg;
+  }
+
+  img {
+    height: 20vmin;
+    pointer-events: none;
+  }
+
+  button {
+    font-size: calc(10px + 1vmin);
+  }
 }
 </style>

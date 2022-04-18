@@ -45,7 +45,8 @@
     ]
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",

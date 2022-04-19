@@ -9,6 +9,7 @@ declare module '*.vue' {
 
 interface ImportMetaEnv {
   VITE_APP_TITLE: 'development' | 'test' | 'staging' | 'production';
+  VITE_API_HOST: string;
 }
 
 interface ImportMeta {

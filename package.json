@@ -45,7 +45,6 @@
     ]
   },
   "dependencies": {
-    "@types/nprogress": "^0.2.0",
     "axios": "^0.26.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
@@ -54,6 +53,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
+    "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "@vitejs/plugin-legacy": "^1.8.1",

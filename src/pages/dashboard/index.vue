@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useGlobalStore } from '@/stores';
-import { getMapData } from '@/apis/dashboard';
+import { getMapData, getDashboardInfo } from '@/apis/dashboard';
 
 const store = useGlobalStore();
 const { title, language } = storeToRefs(store);
@@ -25,6 +25,7 @@ onMounted(() => {
     <p>标题：{{ title }}</p>
     <p>语言：{{ language }}</p>
     <p><button @click="getMap">axios</button></p>
+    <p><button @click="getDashboardInfo">mock</button></p>
   </div>
 </template>
 

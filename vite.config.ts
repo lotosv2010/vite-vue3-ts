@@ -9,8 +9,8 @@ import createCss from './config/style';
 import { VITE_APP_BASE } from './config';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }: ConfigEnv) => ({
-  plugins: [vue(), ...createVitePlugins()],
+export default defineConfig(({ command, mode }: ConfigEnv) => ({
+  plugins: [vue(), ...createVitePlugins(command)],
   base: VITE_APP_BASE,
   server: createServer(mode),
   build: createBuild(),

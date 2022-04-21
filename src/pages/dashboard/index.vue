@@ -4,12 +4,10 @@ import { storeToRefs } from 'pinia';
 import { useGlobalStore } from '@/stores';
 import { getMapData, getDashboardInfo } from '@/apis/dashboard';
 import { useI18n } from 'vue-i18n';
+import { ElButton, ElIcon } from 'element-plus';
+import { AlarmClock } from '@element-plus/icons-vue';
 
-const { locale, t } = useI18n({ useScope: 'global' });
-
-const change = (type: string) => {
-  locale.value = type; // change!
-};
+const { t } = useI18n({ useScope: 'global' });
 
 const store = useGlobalStore();
 const { title, language } = storeToRefs(store);
@@ -31,14 +29,12 @@ onMounted(() => {
     <p>{{ dashboard }}</p>
     <p>标题：{{ title }}</p>
     <p>语言：{{ language }}</p>
-    <p>
-      语言切换测试：{{ t('欢迎使用 vue-i18n') }}
-      <button @click="change('zh')">{{ t('切换到中文') }}</button>
-      <button @click="change('en')">{{ t('切换到英文') }}</button>
-      <button @click="change('ja')">{{ t('切换到日文') }}</button>
-    </p>
-    <p><button @click="getMap">axios</button></p>
-    <p><button @click="getDashboardInfo">mock</button></p>
+    <el-icon :size="50" color="red">
+      <AlarmClock />
+    </el-icon>
+    <p>语言切换测试：{{ t('欢迎使用 vue-i18n') }}</p>
+    <p><el-button type="warning" @click="getMap">axios</el-button></p>
+    <p><el-button type="danger" @click="getDashboardInfo">mock</el-button></p>
   </div>
 </template>
 

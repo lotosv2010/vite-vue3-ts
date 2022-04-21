@@ -45,7 +45,9 @@
     ]
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
     "axios": "^0.26.1",
+    "element-plus": "^2.1.10",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
     "vue": "^3.2.25",
@@ -81,6 +83,7 @@
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-html": "^3.2.0",
     "vite-plugin-mock": "^2.9.6",
+    "vite-plugin-style-import": "^2.0.0",
     "vue-tsc": "^0.29.8"
   }
 }

@@ -31,7 +31,7 @@
     "prettier": "prettier --write .",
     "stylelint": "stylelint --fix \"**/*.{scss,vue,css}\"",
     "prepare": "husky install",
-    "test": "pnpm unit && pnpm e2e",
+    "test": "pnpm unit && pnpm e2e-run",
     "unit": "jest --colors --passWithNoTests",
     "unit-watch": "jest --watchAll",
     "coverage": "jest --coverage",

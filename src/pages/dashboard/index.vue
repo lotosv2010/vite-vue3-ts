@@ -6,6 +6,9 @@ import { getMapData, getDashboardInfo } from '@/apis/dashboard';
 import { useI18n } from 'vue-i18n';
 import { ElButton, ElIcon } from 'element-plus';
 import { AlarmClock } from '@element-plus/icons-vue';
+import { useTitle } from '@/hooks';
+
+useTitle();
 
 const { t } = useI18n({ useScope: 'global' });
 

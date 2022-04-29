@@ -10,8 +10,8 @@
   "keywords": [
     "vite",
     "typescript",
-    "react",
-    "antd",
+    "vue",
+    "element-plus",
     "scss",
     "eslint",
     "prettier"

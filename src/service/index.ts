@@ -17,9 +17,13 @@ const request = new Request({
   timeout: 1000 * 60 * 5,
   interceptors: {
     // 请求拦截器
-    requestInterceptors: (config) => config,
+    requestInterceptors: (config) => {
+      console.log('实例请求拦截');
+      return config;
+    },
     // 响应拦截器
     responseInterceptors: (result: AxiosResponse) => {
+      console.log('实例响应拦截');
       return result;
     },
   },
@@ -36,6 +40,7 @@ const req = <D = any, T = any>(config: IRequest<D>) => {
   const { method = 'GET' } = config;
   if (method === 'get' || method === 'GET') {
     config.params = config.data;
+    Reflect.deleteProperty(config, 'data');
   }
   return request.request<IResponse<T>>(config);
 };

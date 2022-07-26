@@ -17,7 +17,7 @@ const { title, language } = storeToRefs(store);
 const dashboard = ref('Dashboard');
 
 const getMap = async () => {
-  const data = await getMapData();
+  const data = await getMapData({ name: 'test', age: 18 });
   console.log(data);
 };
 
